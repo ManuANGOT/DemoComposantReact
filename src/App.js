@@ -1,9 +1,9 @@
 import { React, useEffect, useState } from 'react';
 import Contact from './models/Contact';
-import { personnes } from './Datas./datas';
+// import { personnes } from './Datas./datas';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import NavBar from './components/NavBarComponent/NavBar';
+import NavBar from './Components/Navbar/NavBar';
 
 function App() {
  

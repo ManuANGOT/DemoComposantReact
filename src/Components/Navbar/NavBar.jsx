@@ -6,9 +6,10 @@ import {
     Outlet,
     Link
 } from 'react-router-dom';
-import ContactListView from '../../Views/ContactListView/ContactListView';
-import AddContact from './Views/AddContacts';
-import HomeView from '../HomeView/HomeView';
+import AddContact from '../../Views/AddContacts/AddContacts';
+import HomeView from '../..Views/HomeView';
+import ContactListView from '../../Views'
+
 import ErrorComponent from '../ErrorComponent/ErrorComponent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faAddressCard, faFolderPlus, faHomeAlt } from "@fortawesome/free-solid-svg-icons";
@@ -20,7 +21,7 @@ const NavBar = ({ListContact, updateListContact}) => {
         <div>
             <BrowserRouter>
                 <div className='navBar'>
-                    <Link to='/' className='btn btn-secondary navBarBtn'>Home</Link>
+                    <Link to='/' className='btn btn-secondary navBarBtn'>HomeView</Link>
                     <Link to='/list' className='btn btn-secondary navBarBtn'>List</Link>
                     <Link to='/add' className='btn btn-secondary navBarBtn'>Add</Link> 
 
